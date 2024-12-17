@@ -329,6 +329,8 @@ img {
 
       &__form {
         position: relative;
+        display: flex;
+        position: relative;
         border-radius: 10px;
 
         &__input {
@@ -349,18 +351,12 @@ img {
             cursor: pointer;
           }
         }
-
-        &::after {
+        
+        &__btn {
           position: absolute;
-          content: "";
-          background: url("/src/images/icons/search-input-button.svg") no-repeat center;
-          background-color: #777;
+          right: -10px;
           padding: 12px;
-          width: 20px;
-          height: 20px;
-          top: 50%;
-          transform: translateY(-50%);
-          right: 0;
+          background: #333;
           cursor: pointer;
         }
       }
